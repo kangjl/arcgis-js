@@ -1,0 +1,6 @@
+//////////////////////////////////////////////
+//         基于开源算法的动态标绘接口       //
+//基于ArcGIS API for JavaScript 3.18        //
+// Copyright © 2016 Esri.                   //
+//////////////////////////////////////////////
+eval((function(x){var d="";var p=0;while(p<x.length){if(x.charAt(p)!="`")d+=x.charAt(p++);else{var l=x.charCodeAt(p+3)-28;if(l>4)d+=d.substr(d.length-x.charCodeAt(p+1)*96-x.charCodeAt(p+2)+3104-l,l);else d+="`";p+=4}}return d})("define([\"dojo/_base/declare\", ` *(lang\", \"../GeoBaseMath\", \"esri/geometry/Polygon` %0int\"], function (f, g, h, k, l) {return f([k, h], {sides:360, constructor:` Y&a) {this._control`!\"!s = a;` 2\"init();}, restore` *P`!S#this;}, toJson` ^'`!s&` R!inherited(arguments`!=!` j!` I*`!+0&& 1 <` e\"` -*.length && (` :!rings = [],` I#ring = 0` ($calculateParts()` 1#spatialReference =` |0[0]` 9-` Z#addRing`!A\"compon`\"C!` 8#verifySR()`\"T\"`!9*`\"V*var a = g.clone` m\"`!;*)`$*\"` ~&`\"O!;if (1 < a`\"r#) {for (var c = a[0], b` %!` <$ - 1],`!,![` 6#Math.sqrt((b.x - c.x) * ` \"(+ (b.y` )!y` 5#` &$), d = 0; 360 > d; d++`\"2#e = (d + 1) *`!$\"PI / 180,` 8!new l(` 4!cos(e) * b + c.x,`!S#in` +(y);a[d] = e;}`\"e.a;}}});});"))

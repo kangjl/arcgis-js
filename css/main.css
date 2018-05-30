@@ -1,0 +1,24 @@
+html,body{
+    font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    height:100%;
+    margin:0px;
+    padding: 0px;
+    font-size: 14px;
+}
+#mapDiv{
+    position: absolute;
+    top:50px;
+    bottom: 0px;
+    width: 100%;
+    margin: 0;
+}
+.esricd-navbar{
+    padding-top: 10px;
+}
+.esricd-navbar > li{
+    padding-right: 5px;
+}
+.esricd-navbar-dropdown-menu{
+    width: auto;
+    min-width: 0px;
+}

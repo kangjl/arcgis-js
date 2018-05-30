@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>ArcGIS API for JavaScript 态势标绘</title>
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.18/dijit/themes/tundra/tundra.css"/>
+    <link rel="stylesheet" href="http://localhost/arcgis_js_api/library/3.18/esri/css/esri.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body class="tundra">
+<!-- toolbar -->
+<div style="position:relative;z-index:900">
+    <nav id="esricdBar" class="navbar navbar-default" role="navigation" style="margin-bottom:0px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="navbar-brand" href="#" style="color:#990000">ArcGIS API for JavaScript 态势标绘</span>
+            </div>
+            <ul class="nav navbar-nav navbar-right esricd-navbar">
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown">
+                            文本 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu esricd-navbar-dropdown-menu" role="menu">
+                            <li><a href="#" node-type="text">Text</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown">
+                            点标 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu esricd-navbar-dropdown-menu" role="menu">
+                            <li><a href="#" node-type="point">点</a></li>
+                            <li><a href="#" node-type="multipoint">多点</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown">
+                            线标 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu esricd-navbar-dropdown-menu" role="menu">
+                            <li><a href="#" node-type="arc">圆弧</a></li>
+                            <li><a href="#" node-type="bspline">B样条曲线</a>
+                            <li><a href="#" node-type="cardinacurve">Cardinal曲线</a>
+                            <li><a href="#" node-type="beziercurve2">贝塞尔2次曲线</a></li>
+                            <li><a href="#" node-type="beziercurve3">贝塞尔3次曲线</a></li>
+                            <li><a href="#" node-type="beziercurven">贝塞尔N次曲线</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown">
+                            面标 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu esricd-navbar-dropdown-menu" role="menu">
+                            <li><a href="#" node-type="circle">圆</a></li>
+                            <li><a href="#" node-type="ellipse">椭圆</a></li>
+                            <li><a href="#" node-type="sector">扇形</a></li>
+                            <li><a href="#" node-type="lune">弓形</a></li>
+                            <li><a href="#" node-type="rectangle">矩形</a></li>
+                            <li><a href="#" node-type="gatheringplace">聚集区</a></li>
+                            <li><a href="#" node-type="polygonex">多边形</a></li>
+                            <li><a href="#" node-type="roundedrect">圆角矩形</a></li>
+                            <li><a href="#" node-type="closecurve">闭合曲线</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown">
+                            旗标<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu esricd-navbar-dropdown-menu" role="menu">
+                            <li><a href="#" node-type="curveflag">曲线旗标</a></li>
+                            <li><a href="#" node-type="rectflag">直角旗标</a></li>
+                            <li><a href="#" node-type="triangleflag">三角旗标</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown">
+                            线箭标 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu esricd-navbar-dropdown-menu" role="menu">
+                            <li><a href="#" node-type="polylinearrow">折线箭头</a></li>
+                            <li><a href="#" node-type="parallelsearch">平行搜寻区</a></li>
+                            <li><a href="#" node-type="sectorsearch">扇形搜寻区</a></li>
+                            <li><a href="#" node-type="beziercurvearrow">贝塞尔曲线箭头</a></li>
+                            <li><a href="#" node-type="cardinalcurvearrow">Cardinal曲线箭头</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown">
+                            面箭标 <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu esricd-navbar-dropdown-menu" role="menu">
+                            <li><a href="#" node-type="straightarrow">直箭头</a></li>
+                            <li><a href="#" node-type="diagonalarrow">斜箭头</a></li>
+                            <li><a href="#" node-type="doublearrow">双箭头</a></li>
+                            <li><a href="#" node-type="clamparrow">钳形箭头</a></li>
+                            <li><a href="#" node-type="attackarrow">进攻箭头</a></li>
+                            <li><a href="#" node-type="dovetailstraightarrow">燕尾直箭头</a></li>
+                            <li><a href="#" node-type="dovetaildiagonalarrow">燕尾斜箭头</a></li>
+                            <li><a href="#" node-type="dovetailattackarrow">燕尾进攻箭头</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button node-type="operation" node-name="close" type="button" class="btn btn-default ">取消</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="btn-group">
+                        <button node-type="operation" node-name="clear" type="button" class="btn btn-default ">清空</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div id="mapDiv">
+</div>
+<script src="config/dojoConfig.js"></script>
+<script src="config/config.js"></script>
+<script src="http://localhost/arcgis_js_api/library/3.18/init.js"></script>
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

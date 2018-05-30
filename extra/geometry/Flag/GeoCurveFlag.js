@@ -1,0 +1,6 @@
+//////////////////////////////////////////////
+//         基于开源算法的动态标绘接口       //
+//基于ArcGIS API for JavaScript 3.18        //
+// Copyright © 2016 Esri.                   //
+//////////////////////////////////////////////
+eval((function(x){var d="";var p=0;while(p<x.length){if(x.charAt(p)!="`")d+=x.charAt(p++);else{var l=x.charCodeAt(p+3)-28;if(l>4)d+=d.substr(d.length-x.charCodeAt(p+1)*96-x.charCodeAt(p+2)+3104-l,l);else d+="`";p+=4}}return d})("define(\"dojo/_base/declare ` ('lang esri/geometry/Polygon ../GeoBaseMath` 4-int ../line/GeoLineString\".split(\" \"), function (e, k, f, g, d, h) {return e([f, g], {constructor:` Q&c) {this._control`!:!s = c;` 2\"init();}, restore` *P`!H#this;}, toJson` ^'`!h&` R!inherited(arguments`!=!` j!` I*`!+0&& 1 <` e\"` -*.length && (` :!rings = [],` I#ring = 0` ($calculateParts()` 1#spatialReference =` |0[0]` 9-` Z#addRing`!A\"compon`\"C!` 8#verifySR()`\"T\"`!9*`\"V*var c = k.clone` m\"`!;*)`$*\"` ~&`\"O!;if (1 < c`\"r#` f#a = c[0], b` %!` 7$ - 1], e = new d((b.x - a.x) / 4 + a.x, (b.y` 2!y) / 8` 2!y), f` O&a.x + b` S\"2,` :#g` 8%3 * ` g3-` g5l` V%b.x` l$c` '*(a.y`!5!` W!2), m` q@` 4#`!\"1n`!}6` |.p`\"}<5` o7q` T%`#b\"` m-b = [` 7!b.y],`$e!(new h).createBezier2([a, e`+.$l]).paths`%0!c` ;6c, m, n, p, q` J'`&,/a.concat(c`&L-.push(b);}}});});"))

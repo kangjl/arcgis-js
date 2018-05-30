@@ -1,0 +1,6 @@
+//////////////////////////////////////////////
+//         基于开源算法的动态标绘接口       //
+//基于ArcGIS API for JavaScript 3.18        //
+// Copyright © 2016 Esri.                   //
+//////////////////////////////////////////////
+eval((function(x){var d="";var p=0;while(p<x.length){if(x.charAt(p)!="`")d+=x.charAt(p++);else{var l=x.charCodeAt(p+3)-28;if(l>4)d+=d.substr(d.length-x.charCodeAt(p+1)*96-x.charCodeAt(p+2)+3104-l,l);else d+="`";p+=4}}return d})("define([\"dojo/_base/declare\", ` *(lang\", \"../../GeoBaseMath` +&line/GeoLineString\"], function (l, k, m, n) {return l([n, m], {part:50, constructor:` T&a) {this._controlPoints = a;` 2\"init();}, restore` *P`!Q#this;}, toJson` ^'`!q&` R!inherited(arguments`!=!` j!` I*if (`!/0&& 1 <` i\"` -*.length`!s$paths = []`!l#path = 0` (#calculateParts()` 1\"spatialReference =` w0[0]` 9-;for (var a`!!! a`!_$compone`!Y&; a++`!`$addPath`\"G\"` A&[a]);}` 0!verifySR();}}, `!k+`#)*`!8$k.clone`#/0), h`\"r\"if (1 < a`#1&var e = a[0], f` %!1];h.push([[e.x, e.y], [f.x, f.y]]);}if (2` Z.b` c%`#A&toVector(b,` y!)`!#\"`$(+` =#e)` Y!d, g`!o\"g`!E\"b)`#k\"b = 1; b`!0'; b`#Z!d = 0 !== b % 2;var c`!K!b];d ? (d`\"'g[b - `!I!c`!<.Interse`#d!(f, e, c, d)) :` .Ue, f` _$`\"/$c);` D/Arrow`$X\"(d` N!15)`$-$c);h.unshift(g);}`%p\"`&!& = h;}});});"))
